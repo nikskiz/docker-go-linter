@@ -10,8 +10,8 @@ docker build .
 
 ## Usage
 
-`docker run --rm -it -v <GO PROJECT>:/usr/local/go/src/ nikskiz/go-linter:latest <GO FILE TO LINTER>
+`docker run --rm -it -v <GO PROJECT>:/usr/local/go/src/ nikskiz/go-linter:latest <GO FILE TO LINTER>`
 
 ```bash
-docker run --rm -it -v $GO_PROJECT:/usr/local/go/src/  $DOCKER_LINTER_REPO cmd/*
+docker run --rm -it -v /home/nikola/go/src/github.com/nikskiz/foo:/usr/local/go/src/  $DOCKER_LINTER_REPO cmd/*
 ```
